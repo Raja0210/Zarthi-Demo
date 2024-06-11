@@ -1,0 +1,25 @@
+.containers{
+  display: flex;
+  font-size: 1.75rem;
+}
+
+table {
+  width: 100%;
+  background-color: black;
+  border-collapse:separate;
+  border-radius:10px;
+  border:solid white 1px;
+}
+
+td, th {
+  border-left:solid white 1px;
+  border-top:solid white 1px;
+}
+
+th {
+  border-top: none;
+}
+
+td:first-child, th:first-child {
+  border-left: none;
+}

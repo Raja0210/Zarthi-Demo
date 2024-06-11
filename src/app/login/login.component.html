@@ -1,0 +1,19 @@
+<body>
+  <div class="container" style="margin-left: 19%; margin-top: 10%; display: flex">
+    <div class="row">
+      <div class="col-md-12" style="background-color: white;">
+        <h1 style="margin-bottom: 20px;justify-content: center;align-self: center;"><b>Zarthi AI Professional Service Discovery Demo</b></h1>
+        <h4 style="margin-bottom: 50px;justify-content: center;align-self: center;display: flex">Unlock Your Journey: Enter Your Password to Continue.</h4>
+        <form [formGroup]="logInForm" (ngSubmit)="onSubmit()">
+          <label style="margin-bottom: 5px">Enter Password<span style="color:red">*</span></label>
+          <input type="password" class="form-control" style="margin-bottom: 10px" formControlName="password">
+          <div class="temp">
+            <button type="submit" class="center-button" style="margin-bottom: 10px">
+              <b>Continue</b>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

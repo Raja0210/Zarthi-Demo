@@ -1,0 +1,39 @@
+<body>
+<header>
+  <h1><b>PROFESSIONAL SERVICE DISCOVERY</b></h1>
+  <p>Need some intel? I'm all ears.</p>
+</header>
+<main style="display: flex;flex-direction: column; gap: 2rem">
+  <div class="main-content">
+    <div class="service-discovery">
+      <div class="title">
+        <h2>Professional Service Discovery</h2>
+      </div>
+      <form>
+      <textarea placeholder="Paste here to discover Professional Service" class="form-control" type="text" id="psd" name="psd" ngModel #copied>{{temp}}</textarea>
+      </form>
+      <div class="buttons">
+        <button class="primary-button" (click)="onPreference()">Show preferences</button>
+        <button class="secondary-button" disabled>Show Entities</button>
+      </div>
+    </div>
+    <div class="example-cases">
+      <div class="example-heading">
+        <h2>Example Cases</h2>
+      </div>
+      <div class="pre-case">
+        <div class="case" *ngFor="let entry of entries, let i=index" style="display: flex;">
+          <p style="display: flex;margin-right: 1%">{{entry}}</p>
+          <button type="button" (click)="onClick(i)" style="color: white;background-color: transparent;height: 10%;margin-top: 7.5%">
+            <i class="bi bi-copy" style="display: flex"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex;flex-direction: column">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+</body>
+

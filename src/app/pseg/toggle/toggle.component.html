@@ -1,0 +1,11 @@
+<body>
+<div class="toggle-radio" *ngIf="pseg.loggedIn">
+  <input type="radio" name="rdo" id="yes" checked>
+  <input type="radio" name="rdo" id="no">
+  <div class="switch">
+    <label for="yes" routerLink="/pseg">PSDiscovery</label>
+    <label for="no" routerLink="/eg">EmailGenerator</label>
+    <span></span>
+  </div>
+</div>
+</body>

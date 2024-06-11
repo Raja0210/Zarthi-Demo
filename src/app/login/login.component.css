@@ -1,0 +1,29 @@
+.col-md-12{
+  border-radius: 10px;
+  border-color: #3aab9e;
+  box-shadow: 7px 7px 1px rgb(205, 234, 230);
+}
+
+.container{
+  display: flex;
+  position: relative;
+}
+
+.row{
+  position: relative;
+}
+.temp{
+  text-align: center;
+}
+.center-button{
+  color: white;
+  margin: 0 auto;
+  background-color: #3aab9e;
+  border: #3aab9e;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 30px;
+  width: 20%;
+}

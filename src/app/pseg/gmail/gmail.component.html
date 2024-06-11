@@ -1,0 +1,38 @@
+<!-- app.component.html -->
+<div class="container">
+  <div class="sidebar">
+    <h1>Email Generator</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" style="color: black">
+      <label for="service">Professional Service *</label>
+      <select id="service" formControlName="service">
+        <option selected *ngFor="let ps of ps" [value]="ps">{{ ps }}</option>
+      </select>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" formControlName="date">
+      <div *ngIf="form.controls.date.errors?.invalidDate">
+        <small class="error">The selected date is in the past. Please choose a valid date.</small>
+      </div>
+
+      <label for="client-email">Client Email</label>
+      <textarea id="client-email" placeholder="Enter the client's previous email content for reply generation" rows="10"></textarea>
+
+      <label for="user-prompt">User Prompt</label>
+      <textarea id="user-prompt" placeholder="Share additional details: context. Example: Write an escalation email" rows="10"></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="content" style="display: flex;flex-direction: row;">
+    <div class="email-content" style="display: flex;flex-direction:column;justify-content: space-between;text-align: center;">
+      <h2 style="background-color: black; color: white;padding: 20px;margin: 0;border-top-left-radius: 10px;">Generate Email</h2>
+      <p>Select a Professional Service for updates</p>
+      <button type="button" id="generate-email" style="margin-left: 55px">Generate Email</button>
+    </div>
+    <div class="service-data">
+      <h3>Professional Service data</h3>
+      <p>No Data</p>
+    </div>
+  </div>
+</div>

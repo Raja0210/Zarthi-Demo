@@ -1,0 +1,17 @@
+
+.navbar{
+  background-color: black;
+  border-radius: 0px;
+  border: 0px;
+  color: white;
+  width: 100%;
+  height: 10%;
+
+}
+.image{
+  width: 153px;
+  height: 46px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-left: 27px;
+}

@@ -1,0 +1,18 @@
+<div class="containers">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col" style="width: 15rem; padding: 2rem">S.No</th>
+      <th scope="col" style="width: 95rem; padding: 2rem">Preferences</th>
+      <th scope="col" style="padding: 2rem">Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tableRow of tableItems">
+      <th scope="row" style="padding: 2rem">{{tableRow[0]}}</th>
+      <td style="padding: 2rem">{{tableRow[1]}}</td>
+      <td style="padding: 2rem">{{tableRow[2]}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
